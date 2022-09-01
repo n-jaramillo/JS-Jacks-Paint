@@ -1,5 +1,6 @@
 function configureListeners() {
-    let images = // select img elements  
+    // select img elements  
+    let images = document.querySelectorAll('img')
 
 
      for (var i = 0; i < images.length; i++) {        
