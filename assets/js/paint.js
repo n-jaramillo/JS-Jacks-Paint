@@ -16,6 +16,9 @@ function addOpacity(event) {
 
 function removeOpacity(event) {
     //remove appropriate CSS class
+    if (this.classList.contains('dim')) {
+        this.classList.remove('dim')
+    }
 
     let element = document.getElementById('color-price');
     element.textContent = '';
@@ -63,7 +66,7 @@ function getProductInfo(paintColor) {
 
     function updatePrice(colorName, price) {
         let colorPrice //= // select element with corresponding id
-            // display price
+        // display price
 
         let color //= // select element with corresponding id
         //display color name
